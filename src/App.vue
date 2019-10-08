@@ -1,28 +1,46 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <v-app>
+    <Menu></Menu>
+    <v-content id="fundo">
+      <v-layout id="geral" fluid fill-height>
+        <router-view />
+      </v-layout>
+    </v-content>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+import Menu from "@/components/Menu.vue";
+export default {
+  components: {
+    Menu
+  },
+  data: () => ({
+    //
+  })
+};
+</script>
+
+<style lang="scss" scoped>
+* {
+  font-family: "Press Start 2P", cursive;
+  #fundo {
+    background: url("https://i.pinimg.com/originals/dc/8d/ef/dc8def609c27f9123c4f61a83a3b93bd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 90%;
+    display: flex;
+    align-items: center;
+
+    #geral {
+      background-color: white;
+      border: 4px solid black;
+      width: 90%;
+      height: 88vh;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
