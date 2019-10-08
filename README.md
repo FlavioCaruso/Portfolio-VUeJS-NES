@@ -1,29 +1,11 @@
-# portifoliones
+# Portifólio
 
-## Project setup
-```
-yarn install
-```
+## Project Setup
 
-### Compiles and hot-reloads for development
 ```
-yarn run serve
+npm install
 ```
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+## Projeto
 
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Portifólio criado em Vue.js de portifólio utilizando [NES.css](https://github.com/nostalgic-css/NES.css) e [Vuetify](https://vuetifyjs.com/pt-BR/)
